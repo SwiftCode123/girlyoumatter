@@ -1,96 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="with=device-width", initial
-    scale=1.0">
-<title>Girl U Matter</title>
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl You Matter About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/girlyoumatter-logo.png">
+</head>
 <body>
-    <section class="sub-header">
-        <nav>
-            <!-- <a href="index.html"><img src="images/logo.jpeg"></a>  -->
-            <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html.html">ABOUT</a></li>
-                    <li><a href="courses.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i> 
-        </nav>
+    <header>
+        <a href="#home" class="logo">
+            <img src="images/girlyoumatter-logo.png" class="logopng">
+        </a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="course.html">Workshops</a></li>
+            <li> <a href="faqs.html">FAQs</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
 
-        <h1>About Us</h1>
-    </section>
-
-<!---about us content--->
-
-<section class="about-us">
-    <body style="background-color:rgb(60, 57, 70)">
-    </body>
-    <div class="row">
-        <div class="about-col">
-            <h1>All races matter</h1>
-            <p>
-
-                In light of the diverse world we live in, I wanted to take a moment to highlight the significance of all races and ethnicities among girls. Each one of us brings a unique blend of culture, heritage, and experiences to the table, making our collective journey through life richer and more vibrant. Today, I want to emphasize the notion that "All Races of Girls Matter," and we should cherish and embrace this diversity wholeheartedly.
-                
-                In a world that often struggles with prejudices and biases, it is crucial to remember that every individual deserves respect and equal opportunities, regardless of their racial background. By recognizing and valuing the contributions of girls from all races, we foster an environment that nurtures empathy, understanding, and unity among us.
-                
-                Our various cultural backgrounds have gifted us with an incredible tapestry of traditions, languages, customs, and art forms, each carrying an inherent beauty that enriches humanity as a whole. By acknowledging the significance of all races, we enable ourselves to learn from one another, grow together, and build a more inclusive society for generations to come.
-                
-                Let's stand together in celebrating the achievements of girls from diverse backgrounds, promoting a world where everyone has a chance to thrive, irrespective of their race. By fostering inclusivity and breaking down barriers, we can create a brighter future that values the uniqueness of each individual.
-                
-                So, let us embrace the richness of our differences and unite in our shared humanity. Together, we can create a world where every girl is empowered, uplifted, and cherished for who she is and what she brings to our collective journey.
-                
-                With love and solidarity,
-                
-                </p>
+    <section class="banner" id="home">
+        <div class="welcome">
+            <h2><b>About us</b></h2>
+            <h3>Get to know us</h3>
         </div>
-        <img src="images/allgirlsmatter.jpg" height="300">
-    </div>
-</section>
+    </section>
+    
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <h2 class="">CEO of GirlYouMatter<br></h2><br>
+                    <div class="content">
+                        <p class="about-text">
+                            Hi, I am the CEO of Girl You Matter LLC. I started this organization because I wanted to empower middle school girls and provide them care about moving into high school. We provide numerous workshops that help many girls during transition state.
+                        </p>
+                    </div>
+                </div>
+                <div class="image-2">
+                    <img src="images/default-image.png" alt="">
+                </div>
+            </div>
+        </div>
 
-<!--Courses-->  
-
-
-<!---Footer--->
-
-<section class="footer">
-    <!-- <h4>About Us</h4> -->
-    <!-- <p>Text goes<br>here</p>
-    <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-    </div> -->
-
-    <!-- <p>Made with <i class="fa fa-heart-o"></i> by Dhruv Tripathi</p> -->
-</section>
-
-<!---Toggle Menu-->
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right= "-200px";
-        }
-
-    </script>
-
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <h2 class="">Web Developer of GirlYouMatter<br></h2><br>
+                    <div class="content">
+                        <p class="about-text">
+                            Hi, I am the lead web developer of Girl You Matter LLC. I was given an opportunity to develop a website for a non-profit organization. I took that chance and used my skills of HTML, CSS and JavaScript to create a website. I am currently studying CS at UTD and I hope to bring more changes and tweaks to this website.                        </p>
+                    </div>
+                </div>
+                <div class="image-2">
+                    <img src="images/default-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
+<script>
+    type="text/javascript">
+           window.addEventListener('scroll', function() 
+           {
+               var header = document.querySelector('header')
+               header.classList.toggle('sticky', window.scrollY > 0);
+           });
+   
+           function toggleMenu() 
+           {
+               var menuToggle = document.querySelector('.toggle');
+               var menu = document.querySelector('.menu');
+               menuToggle.classList.toggle('active');
+               menu.classList.toggle('active');
+           }
+       </script>
 </html>
