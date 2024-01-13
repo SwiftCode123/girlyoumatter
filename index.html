@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl You Matter Non-profit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/girlyoumatter-logo.png">
+    <!-- <link rel="stylesheet" href="sanitize.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">
+            <img src="images/girlyoumatter-logo.png" class="logopng">
+        </a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="course.html">Workshops</a></li>
+            <li> <a href="faqs.html">FAQs</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="welcome">
+            <h2><b>Girl You Matter</b></h2>
+            <h3>Where every race and girl matters</h3>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <h2 class="">About us<br></h2><br>
+                    <div class="content">
+                        <p class="about-text">
+                            Welcome to our non-profit organization, 
+                    where we are passionately dedicated to empowering middle school girls and fostering their growth and potential. 
+                    We believe that every young girl deserves to be supported, nurtured, and celebrated as they navigate this crucial phase of their lives. 
+                    Our mission is to provide a safe and inclusive space where these remarkable individuals can discover their unique strengths, 
+                    build self-confidence, and explore their passions. Through education, mentorship, and various empowerment programs, 
+                    we strive to equip these young changemakers with the tools they need to become future leaders, advocates, 
+                    and catalysts for positive social change. Together, we envision a world where middle school girls are empowered, heard, and celebrated for the 
+                    incredible individuals they are, shaping a brighter and more inclusive future for all. Join us in our journey to uplift and empower 
+                    these inspiring young minds!
+                        </p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/all_races.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="general" id="general">
+        <div class="heading-2">
+            <h2>Workshops we offer</h2>
+            <p>
+                See any of the workshops we offer
+            </p>
+        </div>
+        <div class="card-content">
+            <div class="opportunities" data-aos="flip-up">
+                <img src="images/5741138_clean_hand_hygiene_sanitary_fresh_icon.png" alt="Public Libraries">
+                <h2>Learn Basic First Aide Hygiene</h2>
+                <p>Learn how to have basic hygiene with our support where we talk you through it</p>
+            </div>
+            <div class="opportunities" data-aos="flip-up" alt="Pet Shelter">
+                <img src="images/3533405_confidence_confident_dignity_esteem_motivation_icon.png">
+                <h2>Confidence Building</h2><br>
+                <p>Learn how to be confident in every aspect of your life</p>
+            </div>
+            <div class="opportunities" data-aos="flip-up" alt="Food Banks">
+                <img src="images/185081_speech_user_talk_icon.png">
+                <h2>Social Building Excercises</h2><br>
+                <p>Learn how to be more social and build higher soft skills when talking to people and in a group</p>
+            </div>
+            <div class="opportunities" data-aos="flip-up" alt="Arts Centers">
+                <img src="images/3586372_brain_idea_mind_icon.png">
+                <h2>Mental Health</h2>
+                <p>Learn how to take care of your mental health during hard times. It can be important to talk to someone</p>
+            </div>
+            <div class="opportunities" data-aos="flip-up" alt="Religious Organizations">
+                <img src="images/5310253_bulb_idea_inspiration_light_tips_icon.png">
+                <h2>Extra tips</h2>
+                <p>Need any extra help? We can can always provide help for you in times of need or any other tips.</p>
+            </div>
+            <div class="opportunities" data-aos="flip-up" alt="Religious Organizations">
+                <img src="images/4243325_users_people_icon.png">
+                <h2>Want to talk to someone?</h2>
+                <p>Talking to someone can help if needed. We are always here to provide mental health.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-2">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <h2 class="">Why you matter?<br></h2><br>
+                    <div class="content">
+                        <p class="about-text">
+                            In our diverse world, we celebrate the significance of all races and ethnicities among girls, emphasizing that "All Races of Girls Matter." 
+                            Our unique blend of cultures enriches life, fostering empathy and unity. Despite societal biases, every girl deserves respect and equal opportunities. 
+                            Acknowledging and valuing contributions from all races creates an inclusive society. Our varied backgrounds form a tapestry of traditions, languages, and art, enhancing humanity. 
+                            Recognizing the importance of all races enables mutual learning, growth, and a more inclusive future. 
+                            Let's celebrate the achievements of girls from diverse backgrounds, fostering a world where everyone thrives regardless of race. 
+                            Through inclusivity, we break down barriers, creating a brighter future that values each individual. 
+                            Together, let's embrace differences and unite in shared humanity, empowering every girl for a cherished collective journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/allgirlsmatter.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+ type="text/javascript">
+        window.addEventListener('scroll', function() 
+        {
+            var header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu() 
+        {
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</html>
