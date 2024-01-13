@@ -7,7 +7,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 html
 {
     line-height: 1.5;
@@ -254,6 +253,12 @@ img
 {
     flex-basis: 30%;
     z-index: 2;
+}
+
+.image-2 img
+{
+    width: 70%;
+    margin-top: 25px;
 }
 
 .hover-box 
