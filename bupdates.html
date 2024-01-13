@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl You Matter Bupdates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/girlyoumatter-logo.png">
+</head>
+<body>
+    <section class="bug-fixes-title">
+        <div class="bug-fixes-header">
+            Bug Fixes and Updates
+        </div>
+    </section>
+
+    <section class="bug-texts">
+        <div class="bug-text-container">
+            This is a page where you can see all the updates and bug fixes for this website.
+            Normally, websites don't have this but it was added for a personal touch.
+            As you can see below, the updates to come, version of the website, and any bug fixes
+            that exist on the website.
+            Since this is a void page where there is nothing but information about the website,
+            you can click on these buttons to return to any page you want.
+        </div>
+
+        <div class="button-containers">
+            <button onclick="redirectToPage('Home')" class="button-home">Home</button>
+            <button onclick="redirectToPage('About')" class="button-about">About</button>
+            <button onclick="redirectToPage('Course')" class="button-course">Workshops</button>
+            <button onclick="redirectToPage('FAQs')" class="button-faqs">FAQs</button>
+            <button onclick="redirectToPage('Index')" class="button-index">Index</button>
+          </div>          
+    </section>
+
+    <section class="information">
+        <div class="information-text">
+            Website Version 1.0 - August 12th, 2023 <br>
+            Website Version 2.0 - October 24th, 2023 <br>
+            Website Version 3.0 - January 8th, 2024
+            <br>
+            <br>
+            Current Version - 3.0
+            <br>
+            <br>
+            Bug Fixes:
+            None
+            <br>
+            <br>
+            Current Updates: 
+            None
+            <br>
+            <br>
+            <!-- Future Updates & Features:
+            <ul class="future-updates">
+                <li>Memory/Photo Page</li>
+                <li>New slider</li>
+                <li>Fade in and fade out</li>
+                <li>Animations</li>
+                <li>Small tweaks such as color, text, or font change</li>
+            </ul> -->
+        </div>
+    </section>
+
+    <script>
+        function redirectToPage(button) {
+          if (button === 'Home') {
+            window.location.href = 'index.html';
+          } else if (button === 'About') {
+            window.location.href = 'about.html';
+          } else if (button === 'Course') {
+            window.location.href = 'course.html';
+          } else if (button === 'FAQs') {
+            window.location.href = 'faqs.html';
+          } else if (button === 'Index') {
+            window.location.href = 'contact.html';
+          }
+        }
+      </script>
+      
+</body>
+</html>
