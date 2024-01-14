@@ -1,1 +1,1 @@
-Look at the recent one (it's v2 website)
+This is a website made for a non-profit organization called Girl You Matter LLC. The person who I made this org just started and is brand new. Therefore, she the org CEO tasked me with creating this website. This website will constantly be updated and it is the 3rd version. You can look and see the patch updates on the website if you go to "Contacts" and then scroll all the way to the bottom and click "Bug Fixed & Updates". I mainly used HTML and CSS for this as well as a little JavaScript. 
