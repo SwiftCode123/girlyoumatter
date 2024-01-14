@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" type="x-icon" href="images/girlyoumatter-logo.png">
+    <script src="https://kit.fontawesome.com/a076d055399.js"></script>
 </head>
 <body>
     <header>
+        <!--Watch for responsive FAQ accordian:
+        https://www.youtube.com/watch?v=l1pK5Qr5nl4-->
         <a href="#home" class="logo">
             <img src="images/girlyoumatter-logo.png" class="logopng">
         </a>
@@ -29,8 +32,8 @@
             <h3>Questions?</h3>
         </div>
     </section>
-
-    <div class="faq-container">
+    <!--Old FAQ-->
+    <!-- <div class="faq-container">
         <div class="faq">
             <div class="spacer-2"></div>
             <div class="spacer-2"></div>
@@ -38,9 +41,9 @@
             <div class="question">
                 <h3>How do I get started?</h3>
             </div>
-    
+     -->
             <!--Scalable Vector Graphics, for the arrow-->
-            <svg width="15" height="10" viewBox="0 0 42 25">
+            <!-- <svg width="15" height="10" viewBox="0 0 42 25">
                 <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
             </svg>
     
@@ -53,15 +56,15 @@
             </div>
     
             <div class="spacer-2"></div>
-        </div>
+        </div> -->
        
-        <div class="faq">
+        <!-- <div class="faq">
             <div class="question">
                 <h3>Why Girl You Matter?</h3>
-            </div>
+            </div> -->
     
             <!--Scalable Vector Graphics, for the arrow-->
-            <svg width="15" height="10" viewBox="0 0 42 25">
+            <!-- <svg width="15" height="10" viewBox="0 0 42 25">
                 <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
             </svg>
     
@@ -78,10 +81,10 @@
         <div class="faq">
             <div class="question">
                 <h3>Why you matter?</h3>
-            </div>
+            </div> -->
     
             <!--Scalable Vector Graphics, for the arrow-->
-            <svg width="15" height="10" viewBox="0 0 42 25">
+            <!-- <svg width="15" height="10" viewBox="0 0 42 25">
                 <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
             </svg>
     
@@ -99,10 +102,10 @@
         <div class="faq">
             <div class="question">
                 <h3>Any cost to registration?</h3>
-            </div>
+            </div> -->
     
             <!--Scalable Vector Graphics, for the arrow-->
-            <svg width="15" height="10" viewBox="0 0 42 25">
+            <!-- <svg width="15" height="10" viewBox="0 0 42 25">
                 <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
             </svg>
     
@@ -116,7 +119,93 @@
             <div class="spacer-2"></div>
             <div class="spacer-2"></div>
         </div>
+    </div> -->
+
+    <!--New FAQ-->
+    <!--Wrapper class contains everything-->
+    <section class="wrapper-container">
+        <div class="wrapper">
+            <!--Accordian Heading One-->
+            <div class="parent-tab">
+                <input type="checkbox" id="tab-1" unchecked>
+                <!--Associate with form elements, acts as a clickable heading-->
+                <label for="tab-1">
+                    <span>How do I get started?</span>
+                    <div class="icon"><i class="fas fa-plus"></i></div>
+                </label>
+                <div class="content-2">
+                    <p>You can get started by simply filling out a workshop registration form for any
+                        type of workshop you want. Furthermore, if you have any questions, you can email,
+                        call or just leave a comment in the contacts page.</p>
+                </div>
+            </div>
+    
+        <!--Accordian Heading Two-->
+        <div class="parent-tab">
+            <input type="checkbox" id="tab-2" unchecked>
+            <label for="tab-2">
+                <span>Why Girl You Matter?</span>
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </label>
+            <div class="content-2">
+                <p>By partnering with this organization, we can help build you that needed confidence during the transition from middle school to high school. 
+                    Therefore, we can help you in ways such as giving you tips, talking about anything or even just having a small conversation.</p>
+            </div>
+        </div>
+    
+        <!--Accordian Heading Three-->
+        <div class="parent-tab tab-3">
+            <input type="checkbox" id="tab-3" unchecked>
+            <label for="tab-3">
+                <span>Why you matter?</span>
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </label>
+            <div class="content-2">
+                <!--Sub Heading One-->
+                <div class="child-tab">
+                    <input type="checkbox" id="tab-4">
+                    <label for="tab-4">
+                        <span>Reasons</span>
+                        <div class="icon"><i class="fas fa-plus"></i></div>
+                    </label>
+                    <div class="sub-content">
+                        <p>Every race and girl matters and that is what we care about at this
+                            organization. We want to help as many people as possible in the big transition
+                            from middle school to high school.</p>
+                    </div>
+                </div>
+                <!--Sub Heading Two-->
+                <div class="child-tab">
+                    <input type="checkbox" id="tab-5">
+                    <label for="tab-5">
+                        <span>Registration Process</span>
+                        <div class="icon"><i class="fas fa-plus"></i></div>
+                    </label>
+                    <div class="sub-content">
+                        <p>
+                            You can simply fill out a form and the email will be received to us. After that,
+                            we will take care of the rest. You can then come at the designated time and area.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Accordian Heading Four-->
+        <div class="parent-tab">
+            <input type="checkbox" id="tab-6" unchecked>
+            <label for="tab-6">
+                <span>Any cost to registration?</span>
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </label>
+            <div class="content-2">
+                <p>As this is a non-profit organization, we do not take any kind of fees. Everything
+                    is free and we do not make any profit.</p>
+            </div>
+        </div>
     </div>
+    
+    </section>
 </body>
 
 <script>
