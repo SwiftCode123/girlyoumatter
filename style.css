@@ -93,12 +93,13 @@ header ul li a
     background-position: center;
     align-items: center;
     background: linear-gradient(rgb(169, 144, 165), rgb(181, 125, 172));
+    padding-bottom: 72px;
 }
         
 .banner .welcome 
 {
-    text-align: center;
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
@@ -111,7 +112,7 @@ header ul li a
 .banner h2 b
 {
     font-family: 'Poppins', sans-serif;
-    font-size: 4.5em;
+    font-size: 4em;
     color: #744270;
     font-weight: 500;
     line-height: 1em;
@@ -169,6 +170,7 @@ header ul li a
     flex-direction: column;
     align-content: center;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .about-text
@@ -264,7 +266,7 @@ img
 .hover-box 
 {
     height: 300px;
-    width: 380px;
+    width: 310px;
     background-color: beige;
     display: flex;
     justify-content: center;
@@ -276,11 +278,6 @@ img
 .hover-box:hover 
 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.banner .welcome .workshop-title
-{
-    font-size: 55px; 
 }
 
 .comment-box-container
@@ -345,6 +342,62 @@ img
     background: linear-gradient(rgb(169, 144, 165), rgb(181, 125, 172));
 }
 
+
+/*Workshop header*/
+.banner-2-workshop
+{
+    position: relative;
+    min-height: 100vh;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    align-items: center;
+    background: linear-gradient(rgb(169, 144, 165), rgb(181, 125, 172));
+}
+        
+.banner-2-workshop .welcome 
+{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin-top: 25px;
+}
+
+.banner-2-workshop h2 b
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    color: #744270;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.banner-2-workshop h3 
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-2-workshop h2 span 
+{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner-2-workshop h3 
+{
+    font-size: 2em;
+    color: #870b7c;
+    max-width: 690px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
 .banner-2 .welcome 
 {
     text-align: center;
@@ -385,6 +438,7 @@ img
 {
     font-size: 50px;
 }
+
 /* 
 .faq
 {
@@ -566,52 +620,12 @@ padding: 15px;
     margin-left: 20px;
 }
 
-.banner-2-workshop
+@media(max-width: 600px)
 {
-    position: relative;
-    min-height: 100vh;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    align-items: center;
-    background: linear-gradient(rgb(169, 144, 165), rgb(181, 125, 172));
-}
-
-.banner-2-workshop .welcome 
-{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-    margin-top: 25px;
-}
-
-.banner-2-workshop h2 
-{
-    font-size: 5em;
-    color: #744270;
-    font-weight: 500;
-    line-height: .5em;
-}
-
-.banner-2-workshop h2 span 
-{
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-.banner-2-workshop h3 
-{
-    font-size: 2em;
-    color: #870b7c;
-    max-width: 690px;
-    font-weight: 500;
-    margin-top: 50px;
+    .banner h2 b
+    {
+        font-size: 2.3em;
+    }
 }
 
 @media(max-width: 900px)
@@ -675,7 +689,7 @@ padding: 15px;
 {
     .banner-2-workshop
     {
-        min-height: 75vh;
+        min-height: 50vh;
     }
 }
 
@@ -704,7 +718,7 @@ padding: 15px;
     }
 }
 
-@media(max-width: 900px)
+@media(max-width: 768px)
 {
     .banner .welcome
     {
@@ -714,7 +728,7 @@ padding: 15px;
 
     .banner
     {
-        min-height: 130vh;
+        min-height: 90vh;
         overflow: hidden;
     }
 
