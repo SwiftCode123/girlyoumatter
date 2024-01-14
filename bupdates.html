@@ -3,105 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girl You Matter Contact</title>
+    <title>Girl You Matter Bupdates</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="x-icon" href="images/girlyoumatter-logo.png">
 </head>
 <body>
-    <!--https://www.youtube.com/watch?v=kWhzExWrHiU
-    Watch for responsive contact form-->
-    <header>
-        <a href="#home" class="logo">
-            <img src="images/girlyoumatter-logo.png" class="logopng">
-        </a>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li> <a href="./">Home</a></li>
-            <li> <a href="./about">About</a></li>
-            <li> <a href="./course">Workshops</a></li>
-            <li> <a href="./faqs">FAQs</a></li>
-            <li> <a href="#">Contact</a></li>
-        </ul>
-    </header>
-
-    <section class="banner" id="home">
-        <div class="welcome">
-            <h2><b>Contact</b></h2>
-            <h3>Where every race and girl matters</h3>
+    <section class="bug-fixes-title">
+        <div class="bug-fixes-header">
+            Bug Fixes and Updates
         </div>
     </section>
 
-<section class="about">
-    <div class="container">
-        <div class="row-2">
-            <div class="content">
-                <h2 class=""><br>Address</h2><br>
-                <div class="content">
-                    <p class="about-text">
-                        11572 Valverde Ln
-                        McKinney, Texas, USA
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <h2 class=""><br>Phone Number</h2><br>
-                <div class="content">
-                    <p class="about-text">
-                        +1 (214) 236-2283
-                        Sunday to Saturday, 10AM to 10PM
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <h2 class=""><br>Email</h2><br>
-                <div class="content">
-                    <p class="about-text">
-                        dhruv.tr03@gmail.com
-                        Email us your query
-                    </p>
-                </div>
-            </div>
-            
-            <div class="comment-box">
-                <p>Leave a comment</p>
-                <form action="https://formspree.io/f/moqovrvb" method="POST" class="comment-form">
-                    <input type="text" name="first" placeholder="Full Name" autocomplete="off" required>
-                    <input type="email" name="last" placeholder="Email" autocomplete="off" required>
-                    <input type="text" name="subject" placeholder="Subject" autocomplete="off" required>
-                    <textarea rows="10" name="message" placeholder="Message" autocomplete="off"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+    <section class="bug-texts">
+        <div class="bug-text-container">
+            This is a page where you can see all the updates and bug fixes for this website.
+            Normally, websites don't have this but it was added for a personal touch.
+            As you can see below, the updates to come, version of the website, and any bug fixes
+            that exist on the website.
+            Since this is a void page where there is nothing but information about the website,
+            you can click on these buttons to return to any page you want.
         </div>
-    </div>
-</section>
 
-<section class="bug-fixes">
-    <div><button onclick="redirectToPage()">Bug Fixes & Updates</button></div>
-</section>
+        <div class="button-containers">
+            <button onclick="redirectToPage('Home')" class="button-home">Home</button>
+            <button onclick="redirectToPage('About')" class="button-about">About</button>
+            <button onclick="redirectToPage('Course')" class="button-course">Workshops</button>
+            <button onclick="redirectToPage('FAQs')" class="button-faqs">FAQs</button>
+            <button onclick="redirectToPage('Index')" class="button-index">Index</button>
+          </div>          
+    </section>
 
-<script>
-    type="text/javascript">
-        window.addEventListener('scroll', function() 
-        {
-            var header = document.querySelector('header')
-            header.classList.toggle('sticky', window.scrollY > 0);
-        });
+    <section class="information">
+        <div class="information-text">
+            Website Version 1.0 - August 12th, 2023 <br>
+            Website Version 2.0 - October 24th, 2023 <br>
+            Website Version 3.0 - January 8th, 2024
+            <br>
+            <br>
+            Current Version - 3.0.2
+            <br>
+            <br>
+            Bug Fixes: <br>
+            <ul>
+              <br>
+              Patch update 3.0.1 - 1/13/2024
+              <li>Fixed overflow issues on homepage with text</li>
+              <li>Fixed text issues on contact page</li>
+            </ul>
 
-        function toggleMenu() 
-        {
-            var menuToggle = document.querySelector('.toggle');
-            var menu = document.querySelector('.menu');
-            menuToggle.classList.toggle('active');
-            menu.classList.toggle('active');
+            <ul>
+              <br>
+              Patch update 3.0.2 - 1/14/2024
+              <li>New FAQ accordian</li>
+              <li>Fixed minor spacing issues on all pages for width sizes</li>
+              <li>Fixed coloring issues on Workshop and Contacts page</li>
+              <li>Fixed text sizing issues on Workshop page and 
+                  resized text to adjust for smaller widths</li>
+              <li>Fixed minor padding issues</li>
+            </ul>
+            <br>
+            Current Updates: 
+            None
+            <br>
+            <br>
+            <!-- Future Updates & Features:
+            <ul class="future-updates">
+                <li>Memory/Photo Page</li>
+                <li>New slider</li>
+                <li>Fade in and fade out</li>
+                <li>Animations</li>
+                <li>Small tweaks such as color, text, or font change</li>
+            </ul> -->
+        </div>
+    </section>
+
+    <script>
+        function redirectToPage(button) {
+          if (button === 'Home') {
+            window.location.href = '\.';
+          } else if (button === 'About') {
+            window.location.href = 'about';
+          } else if (button === 'Course') {
+            window.location.href = 'course';
+          } else if (button === 'FAQs') {
+            window.location.href = 'faqs';
+          } else if (button === 'Index') {
+            window.location.href = 'contact';
+          }
         }
-    
-    function redirectToPage()
-    {
-        window.location.href = './bupdates';
-    }
-</script>
+      </script>
+      
 </body>
 </html>
