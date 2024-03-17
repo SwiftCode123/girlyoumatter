@@ -143,7 +143,7 @@ header ul li a:hover
 .index-banner 
 {
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     justify-content: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -151,21 +151,20 @@ header ul li a:hover
     align-items: center;
     background: linear-gradient(rgb(169, 144, 165), rgb(181, 125, 172));
     padding-bottom: 72px;
+    padding-top: 80px;
 }
         
 .index-banner .index-welcome 
 {
     display: flex;
     text-align: center;
-    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 400px;
     margin-top: 25px;
 }
-
 
 .index-banner h2 b
 {
@@ -1132,5 +1131,13 @@ padding: 15px;
     .wrapper-container
     {
         min-height: 50vh;
+    }
+}
+
+@media(max-width: 280px)
+{
+    .index-banner h2 b
+    {
+        font-size: 70px;
     }
 }
